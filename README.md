@@ -8,20 +8,18 @@
 3. [Features](#features)
 4. [Technologies Used](#technologies-used)
 5. [Dataset](#dataset)
-6. [Model Architecture](#model-architecture)
-7. [Installation and Setup](#installation-and-setup)
-8. [Usage](#usage)
-9. [Results](#results)
-10. [License](#license)
+6. [Usage](#usage)
+7. [Results](#results)
+8. [License](#license)
 
 ---
 
 ## **Overview**
-This project focuses on **Convolutional Neural Network (CNN)** for the classification of images of plants according to their disease type. The model will be designed using images from the **PlantVillage Dataset** so that the accuracy of diagnosis of diseases within the agricultural field is enhanced.
+The project involves classifying the different disease conditions in plants using a Convolutional Neural Network. This algorithm has been built using TensorFlow and Keras, which in themselves form important ingredients of the process due to its architecture through the use of several layers such as convolutional, pooling, and dense layers, among other techniques like data augmentation and preprocessing.
 
 ---
-## **Project Objectives
-The goal of this project is to develop a deep learning model for recognizing the disease in the plants from their leaf images. It categorizes the plant images into several categories, for example- healthy or diseased, which will be useful to farmers and agriculturalists with respect to taking any action over the situation.
+## Project Objectives
+The project is aimed at the training of a CNN model in the classification of images of plants into their respective categories with an accuracy level as high as possible. This model could then be used in real-world applications to detect and diagnose diseases in plants automatically.
 
 --- 
 
@@ -40,8 +38,6 @@ The goal of this project is to develop a deep learning model for recognizing the
 
 ## **Dataset**
  The dataset employed for this experiment is the **PlantVillage Dataset**, which contains thousands of images of healthy and diseased plants.
-
-- You can download the dataset here: [PlantVillage Dataset](https://www.tensorflow.org/datasets/catalog/plant_village)
 - Dataset Directory Structure:
   ```
   dataset_directory/
@@ -51,36 +47,8 @@ The goal of this project is to develop a deep learning model for recognizing the
       └── .
 Architecture: Most of the Con2D with ReLU activation followed by MaxPooling2D. Data augmentation contains random flips and rotation to enhance generalization. Fully connected Dense layers have been used for final classification with softmax activation.
 The model was compiled with Adam optimizer and Sparse Categorical Crossentropy as loss.
- 
----
-Installation and Setup
-1. Clone the repository:
-```bash
-git clone https://github.com/dhwanijasoliya/plant-disease.git
-cd plant-disease
-```
-2. Install dependencies:
-Make sure you have Python installed. Install the essential packages in Python using the following commands:
-```bash
-pip install tensorflow matplotlib numpy
-```
 
-### **3. Dataset Setup:**
-- Download the **PlantVillage Dataset** and place it into a folder called `PlantVillage/` inside the project directory.
-  
-  Sample dataset structure:
-  ```bash
-  plant-disease-classification/
-     ├── PlantVillage/
-     └── .
-  ```
 
-### **4. Run the script:**
-```bash
-python train_model.py
-```
-
----
 ## **Usage**
 
 ### **Training the Model:**
@@ -88,10 +56,6 @@ python train_model.py
 2. Created the model using the `build_model()` function.
 3. Trained the model on the training set by calling `model.fit()` function.
 4. Called the `evaluate_model()` function to evaluate the model on the test dataset.
-
-```bash
-python train_model.py
-```
 
 ### **Prediction on New Images:**
 The model will predict plant diseases in new images that can be done during the execution of test set predictions visualized against the actual classes vs the predicted classes as implemented in the `predict()` function.
