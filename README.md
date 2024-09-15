@@ -109,5 +109,4 @@ Sample Prediction Output:
 ---
 
 ## **License**
-This project is licensed under the MIT License - see the file [LICENSE](LICENSE) for details.
----
+This project is licensed under the MIT License.
