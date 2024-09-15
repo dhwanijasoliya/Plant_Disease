@@ -12,9 +12,7 @@
 7. [Installation and Setup](#installation-and-setup)
 8. [Usage](#usage)
 9. [Results](#results)
-10. [Future Work](#future-work)
-11. [Contributing](#contributing)
-12. [License](#license)
+10. [License](#license)
 
 ---
 
@@ -107,7 +105,6 @@ Sample Prediction Output:
 | Actual Class       | Predicted Class    | Confidence |
 |---------------------|--------------------|------------|
 | Tomato Healthy      | Tomato Healthy     | 98.76%     |
-| Apple Scab    | Apple Scab      | 96.24%     |
 
 ---
 
