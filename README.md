@@ -62,7 +62,7 @@ The model will predict plant diseases in new images that can be done during the 
 
 ---
 ## **Results**
-This model reaches a **test accuracy** of over **XX%** on the PlantVillage Dataset after training. The user is allowed to view accuracy and loss curves that were generated along the course of training, which may provide further analysis capabilities.
+This model reaches a **test accuracy** of over **83.30%** on the PlantVillage Dataset after training. The user is allowed to view accuracy and loss curves that were generated along the course of training, which may provide further analysis capabilities.
 
 Sample Prediction Output:
 
